@@ -1,5 +1,4 @@
 # Agenda_Elettronica
-# Agenda_Elettronica
 
 
 Sviluppatori coinvolti: Elia Valenza, Massimo Manzulli
