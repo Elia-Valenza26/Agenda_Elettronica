@@ -1,0 +1,96 @@
+\hypertarget{_menu_8c}{}\doxysection{Riferimenti per il file Menu.\+c}
+\label{_menu_8c}\index{Menu.c@{Menu.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Strutture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Gestione\+\_\+registrazioni.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ricerca.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ordinamento.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{_menu_8c_a219fe688040aef6cbbc53ce086654cdc}{Scelta\+\_\+\+Corretta\+\_\+\+Menu}} (char scelta\mbox{[}$\,$\mbox{]})
+\item 
+char \mbox{\hyperlink{_menu_8c_a99177846316e0113686930f043ef333e}{Menu\+\_\+\+Principale}} ()
+\item 
+char \mbox{\hyperlink{_menu_8c_a0c211d5bc3ec259f5d0974beb5ac387a}{Scelta\+\_\+\+Corretta\+\_\+\+Gestione\+\_\+\+Ricerca}} (char scelta\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{_menu_8c_ab82771d36b790245ffb1ed3ad15c7409}{Menu\+\_\+\+Gestione}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\item 
+void \mbox{\hyperlink{_menu_8c_a30bca4b2fdb132eeda8ada7291954da6}{Menu\+\_\+\+Ricerca}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\item 
+char \mbox{\hyperlink{_menu_8c_a029334811309b1366c6e4f427a3b7e28}{Scelta\+\_\+\+Coretta\+\_\+\+Ordinamento}} (char scelta\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{_menu_8c_ac462d925560e06e4cfd1c9c670894b94}{Menu\+\_\+\+Ordinamento}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_menu_8c_ab82771d36b790245ffb1ed3ad15c7409}\label{_menu_8c_ab82771d36b790245ffb1ed3ad15c7409}} 
+\index{Menu.c@{Menu.c}!Menu\_Gestione@{Menu\_Gestione}}
+\index{Menu\_Gestione@{Menu\_Gestione}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Menu\_Gestione()}{Menu\_Gestione()}}
+{\footnotesize\ttfamily void Menu\+\_\+\+Gestione (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Funzione utile all\textquotesingle{}utente per sfruttare le funzionalita di gestione delle registrazioni 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file contentente le registrazioni \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_menu_8c_ac462d925560e06e4cfd1c9c670894b94}\label{_menu_8c_ac462d925560e06e4cfd1c9c670894b94}} 
+\index{Menu.c@{Menu.c}!Menu\_Ordinamento@{Menu\_Ordinamento}}
+\index{Menu\_Ordinamento@{Menu\_Ordinamento}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Menu\_Ordinamento()}{Menu\_Ordinamento()}}
+{\footnotesize\ttfamily void Menu\+\_\+\+Ordinamento (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Funzione utile all\textquotesingle{}utente per ordinare le registrazioni e visualizzarle 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file contenente le registrazioni \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_menu_8c_a99177846316e0113686930f043ef333e}\label{_menu_8c_a99177846316e0113686930f043ef333e}} 
+\index{Menu.c@{Menu.c}!Menu\_Principale@{Menu\_Principale}}
+\index{Menu\_Principale@{Menu\_Principale}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Menu\_Principale()}{Menu\_Principale()}}
+{\footnotesize\ttfamily char Menu\+\_\+\+Principale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione utile all\textquotesingle{}utente per sfruttare tutte le funzionalita del software \begin{DoxyReturn}{Restituisce}
+restituisce la scelta dell\textquotesingle{}utente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_menu_8c_a30bca4b2fdb132eeda8ada7291954da6}\label{_menu_8c_a30bca4b2fdb132eeda8ada7291954da6}} 
+\index{Menu.c@{Menu.c}!Menu\_Ricerca@{Menu\_Ricerca}}
+\index{Menu\_Ricerca@{Menu\_Ricerca}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Menu\_Ricerca()}{Menu\_Ricerca()}}
+{\footnotesize\ttfamily void Menu\+\_\+\+Ricerca (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Funzione utile all\textquotesingle{}utente per sfruttare le funzionalita di ricerca delle registrazioni 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file contenente le registrazioni \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_menu_8c_a029334811309b1366c6e4f427a3b7e28}\label{_menu_8c_a029334811309b1366c6e4f427a3b7e28}} 
+\index{Menu.c@{Menu.c}!Scelta\_Coretta\_Ordinamento@{Scelta\_Coretta\_Ordinamento}}
+\index{Scelta\_Coretta\_Ordinamento@{Scelta\_Coretta\_Ordinamento}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Scelta\_Coretta\_Ordinamento()}{Scelta\_Coretta\_Ordinamento()}}
+{\footnotesize\ttfamily char Scelta\+\_\+\+Coretta\+\_\+\+Ordinamento (\begin{DoxyParamCaption}\item[{char}]{scelta\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione che verifica la scelta dell\textquotesingle{}utente per il menu ordinamento, ovvero che venga inserito un valore valido 
+\begin{DoxyParams}{Parametri}
+{\em scelta} & prototipo contenente la scelta dell\textquotesingle{}utente sulla quale avvine il controllo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+restituisce 1 se la scelta dell\textquotesingle{}utente corrisponde a una di quelle proposte, altrimenti 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_menu_8c_a0c211d5bc3ec259f5d0974beb5ac387a}\label{_menu_8c_a0c211d5bc3ec259f5d0974beb5ac387a}} 
+\index{Menu.c@{Menu.c}!Scelta\_Corretta\_Gestione\_Ricerca@{Scelta\_Corretta\_Gestione\_Ricerca}}
+\index{Scelta\_Corretta\_Gestione\_Ricerca@{Scelta\_Corretta\_Gestione\_Ricerca}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Scelta\_Corretta\_Gestione\_Ricerca()}{Scelta\_Corretta\_Gestione\_Ricerca()}}
+{\footnotesize\ttfamily char Scelta\+\_\+\+Corretta\+\_\+\+Gestione\+\_\+\+Ricerca (\begin{DoxyParamCaption}\item[{char}]{scelta\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_menu_8c_a219fe688040aef6cbbc53ce086654cdc}\label{_menu_8c_a219fe688040aef6cbbc53ce086654cdc}} 
+\index{Menu.c@{Menu.c}!Scelta\_Corretta\_Menu@{Scelta\_Corretta\_Menu}}
+\index{Scelta\_Corretta\_Menu@{Scelta\_Corretta\_Menu}!Menu.c@{Menu.c}}
+\doxysubsubsection{\texorpdfstring{Scelta\_Corretta\_Menu()}{Scelta\_Corretta\_Menu()}}
+{\footnotesize\ttfamily char Scelta\+\_\+\+Corretta\+\_\+\+Menu (\begin{DoxyParamCaption}\item[{char}]{scelta\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+

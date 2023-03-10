@@ -1,0 +1,238 @@
+\hypertarget{_gestione___registrazioni_8c}{}\doxysection{Riferimenti per il file Gestione\+\_\+\+Registrazioni.\+c}
+\label{_gestione___registrazioni_8c}\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Strutture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ricerca.\+h\char`\"{}}\newline
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_a39738a8cd8d0da08e75d12c2adb3af2d}{ORA\+\_\+\+MINUTI}}~60
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_a12c9980a56d5a469c0024b53452f006e}{ANNO\+\_\+\+INIZIO\+\_\+S}}~2022
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_ab4752233a984c63d2356afb4de5b42a8}{ANNO\+\_\+\+FINE\+\_\+S}}~2050
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_a79862b369f63061ee683951d74e85608}{GIORNI\+\_\+\+ANNO}}~365
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_a936ff2e71f327cd4e475d8bc57d6347d}{GIORNI\+\_\+\+ANNO\+\_\+B}}~366
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_a42e378d920374d4cc86143dcb7a0cf04}{GIORNI\+\_\+\+MESE}}~31
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_abf51fe7f8fa80cf6bc9b1173a69995a9}{GIORNI\+\_\+\+MESE\+\_\+2}}~30
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_a5b7724cca00f25ec6bc35b981eb128c1}{GIORNI\+\_\+\+MESE\+\_\+F}}~28
+\item 
+\#define \mbox{\hyperlink{_gestione___registrazioni_8c_ad1b271ad7de5f7854c12e432754d42ec}{GIORNI\+\_\+\+MESE\+\_\+B}}~29
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_gestione___registrazioni_8c_a89355413815ce0b47813e3cc1be4a7dd}{Calcolo\+\_\+\+Durata}} (\mbox{\hyperlink{struct_registrazione}{Registrazione}} registrazione\+\_\+p)
+\item 
+void \mbox{\hyperlink{_gestione___registrazioni_8c_af2b98d861841515aecce76ebd084d70c}{visualizzazione\+\_\+file}} (\mbox{\hyperlink{struct_registrazione}{Registrazione}} registrazione\+\_\+p)
+\item 
+void \mbox{\hyperlink{_gestione___registrazioni_8c_a181ddd9ecbb720dcdc300a40af89fde1}{Acquisizione\+\_\+\+Controllo\+\_\+\+Data}} (\mbox{\hyperlink{struct_data}{Data}} $\ast$data\+\_\+p)
+\item 
+void \mbox{\hyperlink{_gestione___registrazioni_8c_a97f85616479b5e120a6b66904e0b4d8c}{Acquisizione\+\_\+\+Controllo\+\_\+\+Orario}} (\mbox{\hyperlink{struct_orario}{Orario}} $\ast$orario\+\_\+p)
+\item 
+int \mbox{\hyperlink{_gestione___registrazioni_8c_a4a4b1469f85f818493dc26e84fd7f54f}{Controllo\+\_\+\+Esistenza\+\_\+\+Registrazione}} (\mbox{\hyperlink{struct_registrazione}{Registrazione}} data\+\_\+ora\+\_\+utente, FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\item 
+\mbox{\hyperlink{struct_registrazione}{Registrazione}} \mbox{\hyperlink{_gestione___registrazioni_8c_a71177ee03331bf20d230161427949723}{Inserimento\+\_\+\+Dati\+\_\+\+Registrazione}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\item 
+void \mbox{\hyperlink{_gestione___registrazioni_8c_a35822ad9eb963b579c172fba6f58a463}{Inserimento\+\_\+\+Registrazioni\+\_\+file}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\item 
+int \mbox{\hyperlink{_gestione___registrazioni_8c_a67d5d345d6f33afc5325f43fb2d02541}{Controllo\+\_\+\+Codice}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p, int codice)
+\item 
+void \mbox{\hyperlink{_gestione___registrazioni_8c_a7d8f0a3182c3ac44c97e891a6b052b33}{Modifica\+\_\+\+Registrazione}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\item 
+void \mbox{\hyperlink{_gestione___registrazioni_8c_af706206d7ee68a7ba2e89669137b2072}{Eliminazione\+\_\+\+Registrazione}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_ab4752233a984c63d2356afb4de5b42a8}\label{_gestione___registrazioni_8c_ab4752233a984c63d2356afb4de5b42a8}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!ANNO\_FINE\_S@{ANNO\_FINE\_S}}
+\index{ANNO\_FINE\_S@{ANNO\_FINE\_S}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{ANNO\_FINE\_S}{ANNO\_FINE\_S}}
+{\footnotesize\ttfamily \#define ANNO\+\_\+\+FINE\+\_\+S~2050}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a12c9980a56d5a469c0024b53452f006e}\label{_gestione___registrazioni_8c_a12c9980a56d5a469c0024b53452f006e}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!ANNO\_INIZIO\_S@{ANNO\_INIZIO\_S}}
+\index{ANNO\_INIZIO\_S@{ANNO\_INIZIO\_S}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{ANNO\_INIZIO\_S}{ANNO\_INIZIO\_S}}
+{\footnotesize\ttfamily \#define ANNO\+\_\+\+INIZIO\+\_\+S~2022}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a79862b369f63061ee683951d74e85608}\label{_gestione___registrazioni_8c_a79862b369f63061ee683951d74e85608}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!GIORNI\_ANNO@{GIORNI\_ANNO}}
+\index{GIORNI\_ANNO@{GIORNI\_ANNO}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{GIORNI\_ANNO}{GIORNI\_ANNO}}
+{\footnotesize\ttfamily \#define GIORNI\+\_\+\+ANNO~365}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a936ff2e71f327cd4e475d8bc57d6347d}\label{_gestione___registrazioni_8c_a936ff2e71f327cd4e475d8bc57d6347d}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!GIORNI\_ANNO\_B@{GIORNI\_ANNO\_B}}
+\index{GIORNI\_ANNO\_B@{GIORNI\_ANNO\_B}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{GIORNI\_ANNO\_B}{GIORNI\_ANNO\_B}}
+{\footnotesize\ttfamily \#define GIORNI\+\_\+\+ANNO\+\_\+B~366}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a42e378d920374d4cc86143dcb7a0cf04}\label{_gestione___registrazioni_8c_a42e378d920374d4cc86143dcb7a0cf04}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!GIORNI\_MESE@{GIORNI\_MESE}}
+\index{GIORNI\_MESE@{GIORNI\_MESE}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{GIORNI\_MESE}{GIORNI\_MESE}}
+{\footnotesize\ttfamily \#define GIORNI\+\_\+\+MESE~31}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_abf51fe7f8fa80cf6bc9b1173a69995a9}\label{_gestione___registrazioni_8c_abf51fe7f8fa80cf6bc9b1173a69995a9}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!GIORNI\_MESE\_2@{GIORNI\_MESE\_2}}
+\index{GIORNI\_MESE\_2@{GIORNI\_MESE\_2}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{GIORNI\_MESE\_2}{GIORNI\_MESE\_2}}
+{\footnotesize\ttfamily \#define GIORNI\+\_\+\+MESE\+\_\+2~30}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_ad1b271ad7de5f7854c12e432754d42ec}\label{_gestione___registrazioni_8c_ad1b271ad7de5f7854c12e432754d42ec}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!GIORNI\_MESE\_B@{GIORNI\_MESE\_B}}
+\index{GIORNI\_MESE\_B@{GIORNI\_MESE\_B}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{GIORNI\_MESE\_B}{GIORNI\_MESE\_B}}
+{\footnotesize\ttfamily \#define GIORNI\+\_\+\+MESE\+\_\+B~29}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a5b7724cca00f25ec6bc35b981eb128c1}\label{_gestione___registrazioni_8c_a5b7724cca00f25ec6bc35b981eb128c1}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!GIORNI\_MESE\_F@{GIORNI\_MESE\_F}}
+\index{GIORNI\_MESE\_F@{GIORNI\_MESE\_F}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{GIORNI\_MESE\_F}{GIORNI\_MESE\_F}}
+{\footnotesize\ttfamily \#define GIORNI\+\_\+\+MESE\+\_\+F~28}
+
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a39738a8cd8d0da08e75d12c2adb3af2d}\label{_gestione___registrazioni_8c_a39738a8cd8d0da08e75d12c2adb3af2d}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!ORA\_MINUTI@{ORA\_MINUTI}}
+\index{ORA\_MINUTI@{ORA\_MINUTI}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{ORA\_MINUTI}{ORA\_MINUTI}}
+{\footnotesize\ttfamily \#define ORA\+\_\+\+MINUTI~60}
+
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a181ddd9ecbb720dcdc300a40af89fde1}\label{_gestione___registrazioni_8c_a181ddd9ecbb720dcdc300a40af89fde1}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Acquisizione\_Controllo\_Data@{Acquisizione\_Controllo\_Data}}
+\index{Acquisizione\_Controllo\_Data@{Acquisizione\_Controllo\_Data}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Acquisizione\_Controllo\_Data()}{Acquisizione\_Controllo\_Data()}}
+{\footnotesize\ttfamily void Acquisizione\+\_\+\+Controllo\+\_\+\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+\_\+p }\end{DoxyParamCaption})}
+
+Questo sottoprogramma acquisisce la data e controlla che l\textquotesingle{}utente ne inserisca una valida 
+\begin{DoxyParams}{Parametri}
+{\em data\+\_\+p} & strcut di tipo \mbox{\hyperlink{struct_data}{Data}}, prototipo utilizzato per acquisire i dati dopo il controllo tramite puntatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a97f85616479b5e120a6b66904e0b4d8c}\label{_gestione___registrazioni_8c_a97f85616479b5e120a6b66904e0b4d8c}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Acquisizione\_Controllo\_Orario@{Acquisizione\_Controllo\_Orario}}
+\index{Acquisizione\_Controllo\_Orario@{Acquisizione\_Controllo\_Orario}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Acquisizione\_Controllo\_Orario()}{Acquisizione\_Controllo\_Orario()}}
+{\footnotesize\ttfamily void Acquisizione\+\_\+\+Controllo\+\_\+\+Orario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_orario}{Orario}} $\ast$}]{orario\+\_\+p }\end{DoxyParamCaption})}
+
+Questo sottoprogramma permette di acquisire e controllare che venga inserito dall\textquotesingle{}utente un orario valido 
+\begin{DoxyParams}{Parametri}
+{\em orario\+\_\+p} & struct di tipo \mbox{\hyperlink{struct_orario}{Orario}}, prototipo utilizzato per acquisire i dati dopo il controllo tramite puntatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a89355413815ce0b47813e3cc1be4a7dd}\label{_gestione___registrazioni_8c_a89355413815ce0b47813e3cc1be4a7dd}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Calcolo\_Durata@{Calcolo\_Durata}}
+\index{Calcolo\_Durata@{Calcolo\_Durata}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Calcolo\_Durata()}{Calcolo\_Durata()}}
+{\footnotesize\ttfamily float Calcolo\+\_\+\+Durata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_registrazione}{Registrazione}}}]{registrazione\+\_\+p }\end{DoxyParamCaption})}
+
+Funzione che calcola la durata di una determinata registrazione, nel dettaglio converte gli orari in minuti restituendo la durata 
+\begin{DoxyParams}{Parametri}
+{\em registrazione\+\_\+p} & struct di tipo \mbox{\hyperlink{struct_registrazione}{Registrazione}}, prototipo contenente la registrazione sulla quale opera il sottoprogramma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+restituisce la durata in float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a67d5d345d6f33afc5325f43fb2d02541}\label{_gestione___registrazioni_8c_a67d5d345d6f33afc5325f43fb2d02541}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Controllo\_Codice@{Controllo\_Codice}}
+\index{Controllo\_Codice@{Controllo\_Codice}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Controllo\_Codice()}{Controllo\_Codice()}}
+{\footnotesize\ttfamily int Controllo\+\_\+\+Codice (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p,  }\item[{int}]{codice }\end{DoxyParamCaption})}
+
+Funzione utilizzata per controllare se il codice inserito dall\textquotesingle{}utente sia assocciato a una registrazione presente nel file 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file utilizzato per prendere le registrazioni utilizzate nel controllo \\
+\hline
+{\em codice} & variabile contenente il codice inserito dall\textquotesingle{}utente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+nel caso in cui il sottoprogramma trovi una corrispondenza con il codice dell\textquotesingle{}utente e il codice della registrazione nel file, restituisce 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a4a4b1469f85f818493dc26e84fd7f54f}\label{_gestione___registrazioni_8c_a4a4b1469f85f818493dc26e84fd7f54f}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Controllo\_Esistenza\_Registrazione@{Controllo\_Esistenza\_Registrazione}}
+\index{Controllo\_Esistenza\_Registrazione@{Controllo\_Esistenza\_Registrazione}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Controllo\_Esistenza\_Registrazione()}{Controllo\_Esistenza\_Registrazione()}}
+{\footnotesize\ttfamily int Controllo\+\_\+\+Esistenza\+\_\+\+Registrazione (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_registrazione}{Registrazione}}}]{data\+\_\+ora\+\_\+utente,  }\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Questo sottoprogramma ha la funzione di controllare se nel file esiste gia una registrazione uguale a quella che l\textquotesingle{}utente vuole inserire e se trovata viene fatta visualizzare 
+\begin{DoxyParams}{Parametri}
+{\em data\+\_\+ora\+\_\+utente} & struct di tipo \mbox{\hyperlink{struct_registrazione}{Registrazione}}, prototipo contenente i dati dell\textquotesingle{}utente della registrazione che si vuole inserire \\
+\hline
+{\em registrazioni\+\_\+file\+\_\+p} & file utilizzato per prendere le registrazioni utilizzate nel controllo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Nel caso in cui il sottoprogramma trovi una registrazione nel file nella stessa data e nella stessa ora di quella che l\textquotesingle{}utente vuole inserire, controllo sarà  uguale a 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_af706206d7ee68a7ba2e89669137b2072}\label{_gestione___registrazioni_8c_af706206d7ee68a7ba2e89669137b2072}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Eliminazione\_Registrazione@{Eliminazione\_Registrazione}}
+\index{Eliminazione\_Registrazione@{Eliminazione\_Registrazione}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Eliminazione\_Registrazione()}{Eliminazione\_Registrazione()}}
+{\footnotesize\ttfamily void Eliminazione\+\_\+\+Registrazione (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Procedura utilizzata per eliminare una registrazione presente nel file 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file sul quale avviene l\textquotesingle{}eliminazione \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a71177ee03331bf20d230161427949723}\label{_gestione___registrazioni_8c_a71177ee03331bf20d230161427949723}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Inserimento\_Dati\_Registrazione@{Inserimento\_Dati\_Registrazione}}
+\index{Inserimento\_Dati\_Registrazione@{Inserimento\_Dati\_Registrazione}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Inserimento\_Dati\_Registrazione()}{Inserimento\_Dati\_Registrazione()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_registrazione}{Registrazione}} Inserimento\+\_\+\+Dati\+\_\+\+Registrazione (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Funzione utilizzata per inserire i dati in input dall\textquotesingle{}utente della registrazione che si vuole inserire 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file utilizzato per eventuali controlli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+restituisce la struct contenente i dati inseriti in input dall\textquotesingle{}utente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a35822ad9eb963b579c172fba6f58a463}\label{_gestione___registrazioni_8c_a35822ad9eb963b579c172fba6f58a463}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Inserimento\_Registrazioni\_file@{Inserimento\_Registrazioni\_file}}
+\index{Inserimento\_Registrazioni\_file@{Inserimento\_Registrazioni\_file}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Inserimento\_Registrazioni\_file()}{Inserimento\_Registrazioni\_file()}}
+{\footnotesize\ttfamily void Inserimento\+\_\+\+Registrazioni\+\_\+file (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Procedura utilizzata per inserire le registrazione nel file 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file sul quale vengono inserite le registrazioni \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_a7d8f0a3182c3ac44c97e891a6b052b33}\label{_gestione___registrazioni_8c_a7d8f0a3182c3ac44c97e891a6b052b33}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!Modifica\_Registrazione@{Modifica\_Registrazione}}
+\index{Modifica\_Registrazione@{Modifica\_Registrazione}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{Modifica\_Registrazione()}{Modifica\_Registrazione()}}
+{\footnotesize\ttfamily void Modifica\+\_\+\+Registrazione (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Procedura utilizzata per modificare una registrazione gia presente nel file 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file sul quale avviene la modifica della registrazione \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_gestione___registrazioni_8c_af2b98d861841515aecce76ebd084d70c}\label{_gestione___registrazioni_8c_af2b98d861841515aecce76ebd084d70c}} 
+\index{Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}!visualizzazione\_file@{visualizzazione\_file}}
+\index{visualizzazione\_file@{visualizzazione\_file}!Gestione\_Registrazioni.c@{Gestione\_Registrazioni.c}}
+\doxysubsubsection{\texorpdfstring{visualizzazione\_file()}{visualizzazione\_file()}}
+{\footnotesize\ttfamily void visualizzazione\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_registrazione}{Registrazione}}}]{registrazione\+\_\+p }\end{DoxyParamCaption})}
+
+Procedura che permette la visualizzazione di una registrazione 
+\begin{DoxyParams}{Parametri}
+{\em registrazione\+\_\+p} & struct di tipo \mbox{\hyperlink{struct_registrazione}{Registrazione}}, prototipo contenente i dati per la visualizzazzione \\
+\hline
+\end{DoxyParams}

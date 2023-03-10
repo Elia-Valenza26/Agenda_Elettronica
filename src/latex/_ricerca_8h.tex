@@ -1,0 +1,63 @@
+\hypertarget{_ricerca_8h}{}\doxysection{Riferimenti per il file Ricerca.\+h}
+\label{_ricerca_8h}\index{Ricerca.h@{Ricerca.h}}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_ricerca_8h_a051b9f3cc51826366c5b31538a7bad81}{Ricerca\+\_\+\+Data}} (FILE $\ast$registrazione\+\_\+file\+\_\+p)
+\item 
+void \mbox{\hyperlink{_ricerca_8h_aee2467b2d13af1ef8046840dde33ae5c}{Ricerca\+\_\+\+Tipologia}} (FILE $\ast$registrazione\+\_\+file\+\_\+p)
+\item 
+void \mbox{\hyperlink{_ricerca_8h_adb76ea4ffed38fdfa8bdbf475469ef40}{stringa\+\_\+in\+\_\+minuscolo\+\_\+descrizione}} (char stringa\mbox{[}\mbox{\hyperlink{_strutture_8h_acdf8c34828f46e7d1bb3b3c20d181324}{MAX\+\_\+\+LUNGHEZZA\+\_\+\+DESCRIZIONE}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_ricerca_8h_a4fff42cc099d6246345817ffa1d84ae5}{Ricerca\+\_\+\+Oggetto}} (FILE $\ast$registrazioni\+\_\+file\+\_\+p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_ricerca_8h_a051b9f3cc51826366c5b31538a7bad81}\label{_ricerca_8h_a051b9f3cc51826366c5b31538a7bad81}} 
+\index{Ricerca.h@{Ricerca.h}!Ricerca\_Data@{Ricerca\_Data}}
+\index{Ricerca\_Data@{Ricerca\_Data}!Ricerca.h@{Ricerca.h}}
+\doxysubsubsection{\texorpdfstring{Ricerca\_Data()}{Ricerca\_Data()}}
+{\footnotesize\ttfamily int Ricerca\+\_\+\+Data (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazione\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Funzione che acquisisce in input dall\textquotesingle{}utente una determinata data e stampa in output tutte le registrazini presenti in quella data 
+\begin{DoxyParams}{Parametri}
+{\em registrazione\+\_\+file\+\_\+p} & file utilizzato per la ricerca \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+restituisce 0 se non vengono trovate registrazioni nella data ricercata, 1 se viene trovata almeno una registrazione 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ricerca_8h_a4fff42cc099d6246345817ffa1d84ae5}\label{_ricerca_8h_a4fff42cc099d6246345817ffa1d84ae5}} 
+\index{Ricerca.h@{Ricerca.h}!Ricerca\_Oggetto@{Ricerca\_Oggetto}}
+\index{Ricerca\_Oggetto@{Ricerca\_Oggetto}!Ricerca.h@{Ricerca.h}}
+\doxysubsubsection{\texorpdfstring{Ricerca\_Oggetto()}{Ricerca\_Oggetto()}}
+{\footnotesize\ttfamily void Ricerca\+\_\+\+Oggetto (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazioni\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Procedura che acquisisce in input dall\textquotesingle{}untente l\textquotesingle{}oggetto che si intende cercare, vale anche per sottostringa, e visualizza in output tutte le registrazionu presenti nel file con tale oggetto 
+\begin{DoxyParams}{Parametri}
+{\em registrazioni\+\_\+file\+\_\+p} & file utilizzato per la ricerca \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ricerca_8h_aee2467b2d13af1ef8046840dde33ae5c}\label{_ricerca_8h_aee2467b2d13af1ef8046840dde33ae5c}} 
+\index{Ricerca.h@{Ricerca.h}!Ricerca\_Tipologia@{Ricerca\_Tipologia}}
+\index{Ricerca\_Tipologia@{Ricerca\_Tipologia}!Ricerca.h@{Ricerca.h}}
+\doxysubsubsection{\texorpdfstring{Ricerca\_Tipologia()}{Ricerca\_Tipologia()}}
+{\footnotesize\ttfamily void Ricerca\+\_\+\+Tipologia (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{registrazione\+\_\+file\+\_\+p }\end{DoxyParamCaption})}
+
+Procedura che acquisisce in input dall\textquotesingle{}utente la tipologia che si intende cercare e visualizza in output le registrazioni presenti nel file con tale tipologia 
+\begin{DoxyParams}{Parametri}
+{\em registrazione\+\_\+file\+\_\+p} & file utilizzato per la ricerca \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ricerca_8h_adb76ea4ffed38fdfa8bdbf475469ef40}\label{_ricerca_8h_adb76ea4ffed38fdfa8bdbf475469ef40}} 
+\index{Ricerca.h@{Ricerca.h}!stringa\_in\_minuscolo\_descrizione@{stringa\_in\_minuscolo\_descrizione}}
+\index{stringa\_in\_minuscolo\_descrizione@{stringa\_in\_minuscolo\_descrizione}!Ricerca.h@{Ricerca.h}}
+\doxysubsubsection{\texorpdfstring{stringa\_in\_minuscolo\_descrizione()}{stringa\_in\_minuscolo\_descrizione()}}
+{\footnotesize\ttfamily void stringa\+\_\+in\+\_\+minuscolo\+\_\+descrizione (\begin{DoxyParamCaption}\item[{char}]{stringa\mbox{[}\+MAX\+\_\+\+LUNGHEZZA\+\_\+\+DESCRIZIONE\mbox{]} }\end{DoxyParamCaption})}
+
+Questa procedura ha la funzione di convertire tutte la stringa che l\textquotesingle{}utente inserisce in input per la descrizione in minuscolo cosi da facilitare la ricerca 
+\begin{DoxyParams}{Parametri}
+{\em stringa} & protopito su cui lavora il sottoprogramma \\
+\hline
+\end{DoxyParams}
