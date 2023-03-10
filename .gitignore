@@ -4,4 +4,6 @@
 Debug/
 .cproject
 .project
-
+.html/
+.latex/
+.Agenda_Elettronica.doxyfile
